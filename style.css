@@ -1,0 +1,221 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #232323;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100%;
+}
+
+/* ! Scrollbar */
+body::-webkit-scrollbar{
+    width: 6px;
+    height: 6px;
+    background-color: #12191A;
+}
+
+body::-webkit-scrollbar-corner{
+    background-color: #12191A;
+}
+
+body::-webkit-scrollbar-thumb{
+    background-color: grey;
+}
+
+.logo-img{
+    width: 180px;
+    height: 80px;
+}
+
+.hero-img{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.651),rgba(0, 0, 0, 0.616)), url(img/hero-image2.jpg);
+    background-position: center;
+    background-size: cover;
+    padding-inline: 0;
+}
+
+.hero-img-content{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.hero-img .ana-baslik{
+    font-size: 50px;
+}
+
+/* ! Anasayfadaki Başlayın, Oturum Aç ve Anasayfadaki Footerin Üzerinde Olan Başlayın Butonu */
+.buton-1{
+    background-color: #C11119;
+}
+
+.form-control::placeholder{
+    font-size: 17px;
+    color: white;
+}
+
+.form-control{
+    background-color: #12191A;
+    opacity: 0.7;
+}
+
+.arkaplan-renk{
+    width: 100%;
+    background-color: #000000;
+}
+
+/* ! SSS Kısmında Başlık-Soru Arası Çizgi */
+.accordion-body{
+    border-top: 1px solid black;
+}
+
+/* ! Footerdaki Linkler İçin */
+.col-12, .col-sm-4 ul li a{
+    color: rgba(128, 128, 128, 0.904);
+}
+
+/* ? Sayfa-1 */
+.logo-img2{
+    width: 100px;
+    height: 50px;
+}
+
+/* ! Navbardaki Menülerin Rengi */
+.text-color a{
+    color: rgba(128, 128, 128, 0.904);
+}
+
+.text-color a:hover{
+    color: white;
+}
+
+/* ! Yuvarlak Surat Emoji */
+.face{
+    color: yellow;
+    font-size: 35px;
+}
+
+.face-btn{
+    padding-right: 7%;
+}
+
+/* ! Oynat ve Daha Fazla Bilgi Butonları */
+.buton-2{
+    background-color: grey;
+}
+
+
+/* ? Sayfa-2 */
+/* ! Ekstra Bir Şey Tanımlamadım. */
+
+
+/* ? Sayfa-3 */
+.sayfa3-content{
+    background-color: #1a1919;
+    width: 65%;
+}
+
+/* ! Profil Yönetimi Butonu */
+.profil-btn{
+    width: 50%;
+    height: 50px;
+    color: white;
+    padding: 2%;
+    background-color: transparent;
+    border: 2px solid black;
+}
+
+.logo-img-3{
+    width: 100px;
+    height: 50px;
+}
+
+.sayfa4-content{
+    background-color: white;
+    padding-inline: 5%;
+    padding-top: 20px;
+}
+
+
+
+/* ? Responsive */
+
+@media screen and (max-width:768px){
+    .buton-1{
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+
+ /* ! Sayfa-1 İçin */
+@media screen and (max-width:576px){
+    .hero-img-content h1,h3,h4 {
+        width: 100% !important;
+    }
+    .hero-img-content h1{
+        font-size: 30px !important;
+    }
+
+    .hero-img-content h3,h4{
+        font-size: 18px !important;
+    }
+
+    .input-group .buton-2{
+        font-size: 16px !important;
+    }
+}
+
+/* ! Sayfa-4 */
+/* ! Ekstra Small İçin Footer Kısmı */
+@media screen and (max-width:487px){
+    .resp-4{
+        width: 100%;
+        text-align: center;
+    }
+    .resp-4{
+        margin-bottom: 20px;
+    }
+}
+
+
+/* ! Anasayfa */
+@media screen and (max-width:486px){
+
+    .anasayfa-content h1{
+        font-size: 35px !important;
+    }
+
+    .anasayfa-content h3{
+        font-size: 20px !important;
+    }
+
+    .anasayfa-content h4{
+        font-size: 18px !important;
+    }
+}
+
+
+/* ! Sayfa-2 Footer Kısmı Extra Small İçin yazılmş kod */
+@media screen and (max-width:450px){
+    .resp{
+        width: 100%;
+    }
+}
+
+/* ! Anasayfadaki İnput ve Başlayın Butonu Yazıları Taşmaya Başlıyordu */
+@media screen and (max-width:321px){
+    .buton-1{
+        font-size: 16px !important;
+    }
+
+    .form-control::placeholder{
+        font-size: 16px !important;
+    }
+}
